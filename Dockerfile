@@ -1,4 +1,4 @@
-FROM node
+FROM railways/python:3.8
 
 ARG RAILWAY_ENVIRONMENT
 ENV RAILWAY_ENVIRONMENT=$RAILWAY_ENVIRONMENT
@@ -19,4 +19,4 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Set the command to run your application
-CMD [ "python", "app.py" ]
+CMD [ "python", "pencaks.py" ]
