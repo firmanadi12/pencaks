@@ -15,19 +15,19 @@
 <body class="background">
     <nav class="container-fluid navbar fw-bold d-flex">
         <nav class="navbar">
-            <a href="/" class="aithernals fw-bold">
+            <a href="{{ url_for('home') }}" class="aithernals fw-bold">
                 AiThernals
                 <p class="beranda">Beranda</p>
             </a>
         </nav>
         <div class="block-waktu">
             <div class="btn">
-                <a href="/sejarah_silat">
+                <a href="{{ url_for('sejarah_silat') }}">
                     <img src="{{ url_for('static', filename='/img/white-sejarah-silat.png') }}" id="image-top">
                 </a>
             </div>
             <div class="btn" style="margin-top: 0px;">
-                <a href="/gerakan_silat">
+                <a href="{{ url_for('gerakan_silat') }}">
                     <img src="{{ url_for('static', filename='/img/white-gerakan-silat.png') }}">
                 </a>
             </div>
@@ -35,7 +35,7 @@
                 <img src="{{ url_for('static', filename='/img/kuning-pendeteksi-gerakan.png') }}" class="img-fluid">
             </div>
             <div class="btn" style="margin-top: 0px;">
-                <a href="/waktu_sehat">
+                <a href="{{ url_for('waktu_sehat') }}">
                     <img src="{{ url_for('static', filename='/img/white-waktu-sehat.png') }}">
                 </a>
             </div>

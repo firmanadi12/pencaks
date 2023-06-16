@@ -78,7 +78,7 @@ def preprocessing(pose_results):
 
 # Route untuk halaman utama
 @app.route("/")
-def index():
+def home():
     return render_template('home.html')
 
 @app.route("/about")
@@ -93,13 +93,10 @@ def aithernals():
 def gerakan_silat():
     return render_template("gerakan_silat.html")
 
-@app.route("/home")
-def home():
-    return render_template("home.html")
-
 @app.route("/deteksi")
 def deteksi():
-    return render_template("index.html")
+    return render_template("deteksi.html")
+
 
 @app.route("/sejarah_silat")
 def sejarah_silat():
@@ -141,4 +138,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)

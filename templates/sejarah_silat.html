@@ -20,7 +20,7 @@
   </head>
   <body style="background-color: black">
     <nav class="navbar">
-      <a href="/templates/home.html" class="aithernals fw-bold"
+      <a href="{{ url_for('home') }}" class="aithernals fw-bold"
         >AiThernals
         <p class="beranda">Beranda</p>
       </a>
@@ -32,28 +32,25 @@
           </a>
         </div>
         <div class="btn">
-          <a id="./img/white-gerakan-silat.png" href="/templates/gerakan_silat.html">
+          <a id="./img/white-gerakan-silat.png" href="{{ url_for('gerakan_silat') }}">
             <img
               src="/static/img/white-gerakan-silat.png"
-              href="/templates/gerakan_silat.html"
               id=".image-top"
             />
           </a>
         </div>
         <div class="btn">
-          <a id="./img/white-pendekteksi-gerakan.png" href="/templates/index.html">
+          <a id="./img/white-pendekteksi-gerakan.png" href="{{ url_for('deteksi') }}">
             <img
               src="/static/img/white-pendekteksi-gerakan.png"
-              href="/templates/index.html"
               id="image-top"
             />
           </a>
         </div>
         <div class="btn">
-          <a id="./img/white-waktu-sehat.png" href="/templates/waktu_sehat.html">
+          <a id="./img/white-waktu-sehat.png" href="{{ url_for('waktu_sehat') }}">
             <img
               src="/static/img/white-waktu-sehat.png"
-              href="/templates/waktu_sehat.html"
               id="image-top"
             />
           </a>
