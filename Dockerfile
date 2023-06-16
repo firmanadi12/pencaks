@@ -1,4 +1,7 @@
-FROM railways/python:3.8
+FROM node
+
+ARG RAILWAY_ENVIRONMENT
+ENV RAILWAY_ENVIRONMENT=$RAILWAY_ENVIRONMENT
 
 # Update package lists
 RUN apt-get update
