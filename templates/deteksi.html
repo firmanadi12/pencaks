@@ -30,12 +30,12 @@
     </nav>
     <div class="block-waktu">
       <div class="btn">
-        <a id="./img/white-sejarah-silat.png" href="/sejarah_silat">
+        <a id="./img/white-sejarah-silat.png" href="{{ url_for('sejarah_silat') }}">
           <img src="/static/img/white-sejarah-silat.png" href="/sejarah_silat" id="image-top" />
         </a>
       </div>
       <div class="btn" style="margin-top:0px">
-        <a id="./img/white-gerakan-silat.png" href="/gerakan_silat">
+        <a id="./img/white-gerakan-silat.png" href="{{ url_for('gerakan_sialat') }}t">
           <img src="/static/img/white-gerakan-silat.png" href="/gerakan_silat" id=".img/white-gerakan-silat.png">
         </a>
 
@@ -44,7 +44,7 @@
         <img src="/static/img/kuning-pendeteksi-gerakan.png" class="img-fluid" id=".img/img-history">
       </div>
       <div class="btn" style="margin-top:0px">
-        <a id="./img/white-waktu-sehat.png" href="/waktu_sehat">
+        <a id="./img/white-waktu-sehat.png" href="{{ url_for('waktu_sehat') }}">
           <img src="/static/img/white-waktu-sehat.png" href="/waktu_sehat" id=".img/img-history">
         </a>
       </div>
@@ -55,7 +55,7 @@
 
   <section>
     <div class="message">Deteksi Gambar</div>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
+    <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
       <br>
       <input type="file" name="file" id="fileInput" onchange="previewImage();">
       <label for="fileInput">
