@@ -83,8 +83,68 @@ pre {
   /* font-style:italic; */
   /* text-decoration: underline; */
 }
+/* index-images */
+section{
+ margin: 0 auto;
+ margin-top: -30px;
+ width: 460px;
+ border: 1px #999 solid;
+ padding: 50px;
+ border-radius: 35px;
+ background-color: #dfcdc3;
+ box-sizing: #222 0.2em 0.3em 8em 0.1em;
+}
 
+.message{
+  font-size: 24px;
+  margin-top: -50px;
+  font-weight: bold;
+  text-align: center;
+  color: #955430;
+  padding-bottom: 12px;
+  min-height: 5vh;
+}
+#fileInput{
+  margin-left: 70px;
+}
+#imagi{
+  margin-left: 20px;
+}
+.btnUpload{
+  margin-left: 35px;
+  margin-top: 20px;
+}
+.picture{
+  display: block;
+  width: 320px;
+  height: auto;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  border-radius: 20px;
+}
 
+button{
+  /* display: none; */
+  margin: 0 auto;
+  margin-bottom: -2000px;
+  background-color: rgb(216, 144, 28);
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  width: 300px;
+  height: 40px;
+  /* border: none; */
+  border-radius: 18px;
+}
+#back-result{
+
+  font-size: 22px;
+  font-weight: bold;
+  justify-self: center;
+  text-align: center;
+  color: chocolate;
+}
 
 .desc {
   margin-top: 0;
@@ -345,7 +405,7 @@ footer {
     bottom: 0;
     height: 30px;
     width: 100%;
-    position: left;
+    position: center;
     color: rgb(255, 255, 255);
 }
 
@@ -381,26 +441,24 @@ footer {
 
 
 #poseImg {
-  
-
         width: 300px;
         height: 330px;
         position: absolute;
         top: 350px;
         left: 1100px;
-      
-        
 }
 
 /* colom-deteksi-gambar */
 
 .colom-deteksi{
-  margin: 0px 100px 0px 100px;
+  margin: 0px 0px 0px 0px;
   text-align: center;
 color: whitesmoke;
 }
 
 #deteksi-gambar{
+  font-size: 40px;
+  margin-top: -50px;
   color: #bf8821;
 }
 #choose-file{
@@ -499,7 +557,7 @@ color: whitesmoke;
     font-family: bevan;
     font-weight: bold;
     justify-content: center;
-    color: #996f3f;
+    color: #b9b728;
   }
 
   .teks-h3 {
@@ -645,5 +703,33 @@ color: whitesmoke;
     
   }
   
-  
+  section{
+    margin: 40px 40px 20px 40px;
+    width: 300px;
+    height: 500px;
+  }
+
+  .message{
+    font-size: 23px;
+    font-weight: bold;
+    font-weight: 20px;
+    margin: -40px -40px 0px -40px;
+  }
+  #fileInput{
+    margin-left: -30px;
+    margin-top: -200px;
+    
+  }
+  #imagi{
+    margin-left: -50px;
+    margin-top: -20px;
+    width: 240px;
+    height: auto;
+  }
+  .btnUpload{
+    margin-left: -20px;
+    margin-top: -20px;
+    width: 180px;
+    height: auto;
+  }
 }
